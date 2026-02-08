@@ -1,0 +1,142 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Base */
+body {
+  font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+  color: #eaeaea;
+  background-color: #0f0f0f;
+  line-height: 1.6;
+}
+
+/* HERO */
+.hero {
+  position: relative;
+  height: 100vh;
+  background-image: url('images/cover.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.65);
+}
+
+.hero-content {
+  position: relative;
+  text-align: center;
+  max-width: 800px;
+  padding: 20px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.subtitle {
+  font-size: 1.3rem;
+  margin-bottom: 30px;
+  color: #ccc;
+}
+
+/* Botones */
+.btn-primary {
+  display: inline-block;
+  padding: 14px 28px;
+  background-color: #b30000;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #8f0000;
+}
+
+/* Contenedor */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+
+/* Secciones */
+.section {
+  margin-bottom: 60px;
+}
+
+.section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  border-left: 4px solid #b30000;
+  padding-left: 12px;
+}
+
+.section p {
+  font-size: 1.05rem;
+  color: #ddd;
+}
+
+/* Sección oscura */
+.section.dark {
+  background-color: #181818;
+  padding: 40px;
+  border-radius: 6px;
+}
+
+/* Lista */
+.features {
+  list-style: none;
+}
+
+.features li {
+  margin-bottom: 12px;
+  font-size: 1.05rem;
+}
+
+/* Autor */
+.author {
+  display: flex;
+  gap: 30px;
+}
+
+.author-text p {
+  margin-bottom: 15px;
+}
+
+/* CTA final */
+.cta-section {
+  text-align: center;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 30px;
+  font-size: 0.9rem;
+  color: #777;
+  background-color: #0a0a0a;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .subtitle {
+    font-size: 1.1rem;
+  }
+}
