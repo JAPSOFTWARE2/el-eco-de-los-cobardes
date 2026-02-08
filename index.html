@@ -14,18 +14,18 @@
 <body>
     <a class="skip-link" href="#contenido">Saltar al contenido principal</a>
 
-<header class="hero">
-    <div class="overlay"></div>
-    <div class="hero-content" role="presentation">
-        <h1>El Eco de los Cobardes</h1>
-        <p class="subtitle">Un thriller político que te hará cuestionar la verdad</p>
+<header class="hero" role="banner" aria-labelledby="titulo-principal" aria-describedby="subtitulo-principal">
+    <div class="overlay" aria-hidden="true"></div>
+    <div class="hero-content">
+        <h1 id="titulo-principal">El Eco de los Cobardes</h1>
+        <p class="subtitle" id="subtitulo-principal">Un thriller político que te hará cuestionar la verdad</p>
         <a href="https://www.amazon.es/dp/B0GM9SRM5C/" target="_blank" rel="noopener noreferrer" class="btn-primary">
             Comprar en Amazon
         </a>
     </div>
 </header>
 
-<main id="contenido" class="container">
+<main id="contenido" class="container" role="main">
 
     <section class="section" aria-labelledby="sinopsis">
         <h2 id="sinopsis">Sinopsis</h2>
@@ -72,7 +72,7 @@
 
 </main>
 
-<footer class="footer">
+<footer class="footer" role="contentinfo">
     <p>© El Eco de los Cobardes</p>
 </footer>
 
