@@ -13,6 +13,24 @@ body {
   line-height: 1.6;
 }
 
+.skip-link {
+  position: absolute;
+  left: 16px;
+  top: 16px;
+  padding: 10px 16px;
+  background-color: #0f0f0f;
+  color: #fff;
+  border-radius: 4px;
+  text-decoration: none;
+  transform: translateY(-200%);
+  transition: transform 0.2s;
+  z-index: 10;
+}
+
+.skip-link:focus-visible {
+  transform: translateY(0);
+}
+
 /* HERO */
 .hero {
   position: relative;
@@ -63,6 +81,12 @@ body {
 
 .btn-primary:hover {
   background-color: #8f0000;
+}
+
+.btn-primary:focus-visible,
+a:focus-visible {
+  outline: 3px solid #ffffff;
+  outline-offset: 3px;
 }
 
 /* Contenedor */
@@ -126,8 +150,20 @@ body {
   text-align: center;
   padding: 30px;
   font-size: 0.9rem;
-  color: #777;
+  color: #bdbdbd;
   background-color: #0a0a0a;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+  white-space: nowrap;
 }
 
 /* Responsive */
