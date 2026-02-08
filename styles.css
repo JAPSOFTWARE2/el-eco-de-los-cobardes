@@ -238,4 +238,19 @@ a:focus-visible {
     flex-direction: row;
     gap: 30px;
   }
+
+  .author-data p {
+  margin-bottom: 10px;
+  font-size: 1.05rem;
+  color: #ddd;
+}
+
+.author-note {
+  margin-top: 20px;
+  font-style: italic;
+  color: #bbb;
+  border-left: 3px solid #b30000;
+  padding-left: 15px;
+}
+
 }
